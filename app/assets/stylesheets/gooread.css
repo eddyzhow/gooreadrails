@@ -1,0 +1,41 @@
+body {
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif
+}
+#header { 
+	height: 40px; 
+	background-color: #0088CC;
+}
+.books {
+	padding-left: 0px;
+	width: 636px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.books .book {
+	display: block;
+	float: left;
+	margin-left: 12px;
+	width: 200px;
+}
+.books .book h1 {
+	margin: 0px;
+	margin-bottom: 12px;
+	font-size: 1.1em;
+}
+.books .book .detail {
+	line-height: 1.5em;
+}
+.clear {
+	display: block;
+	clear: both;
+}
+.bookpicture {
+	float: left;
+}
+.bookdetail {
+	float: left;
+	width: 400px;
+}
+.bookdetail li {
+	display: block;
+}
