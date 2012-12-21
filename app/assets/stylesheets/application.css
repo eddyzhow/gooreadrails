@@ -11,3 +11,63 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif
+}
+
+#screen {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header {
+	height: 40px;
+	background-color: #0088CC;
+}
+#content{
+	
+}
+#footer{
+	height: 40px;
+	background-color: #0088CC;
+	clear: both;
+}
+
+
+.books {
+	padding-left: 0px;
+}
+.books .book {
+	display: block;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 33%;
+}
+.books .book .thumbnail {
+	text-align: center;
+}
+
+.books .book h1 {
+	margin: 0px;
+	margin-bottom: 12px;
+	font-size: 1.1em;
+}
+.books .book .detail {
+	line-height: 1.5em;
+}
+.clear {
+	display: block;
+	clear: both;
+}
+.bookpicture {
+	float: left;
+}
+.bookdetail {
+	float: left;
+	width: 400px;
+}
+.bookdetail li {
+	display: block;
+}
