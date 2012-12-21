@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   end
 
   def book_detail
-  	render './bookdetail' + params[:book_id]
+  	render './books' + params[:book_id]
   end
 
 end

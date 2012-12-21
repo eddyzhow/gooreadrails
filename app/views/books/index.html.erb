@@ -1,0 +1,21 @@
+<ul class="books">
+<%= image_tag "333.gif", :id => 'loading' %>
+  <script type="text/javascript">
+      $.getJSON('<%= books_path %>', function(data) {
+          $('#loading').hide(0);
+          $.each(data, function(i, v) {
+              $('ul.books').append(
+              '<li class=\"book\">' +
+                    '<div class=\"thumbnail\">' +
+                        '<a href=\"/books/' + v.id + '\"><img alt=\"1\" height=\"282\" src=\"/assets/' + v.image_url + '\" width=\"200\" /></a>' +
+                    '</div>' +
+                    '<h1>' + v.title + '</h1>' +
+                    '<p class="detail">' +
+                        v.description +
+                    '</p>' +
+                    '</li>'
+              );
+          });
+      });
+  </script>
+</ul>

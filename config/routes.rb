@@ -1,10 +1,8 @@
 Gooreadrails::Application.routes.draw do
-  get "bookdetail/index"
-
-  get "gooread/index"
 
   root :to => 'gooread#index'
+  resources :books
   
-  #match 'bookdetail/:book_id' => 'application#book_detail'
+  #match 'books/:book_id' => 'application#book_detail'
   
 end
